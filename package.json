@@ -1,0 +1,18 @@
+{
+  "name": "jenkinsfarm",
+  "version": "1.0.0",
+  "description": "Containerized Jenkins Farm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbogdanoff/jenkinsfarm.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rbogdanoff/jenkinsfarm/issues"
+  },
+  "homepage": "https://github.com/rbogdanoff/jenkinsfarm#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
