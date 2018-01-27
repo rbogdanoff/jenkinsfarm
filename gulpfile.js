@@ -8,11 +8,11 @@ const jenkinsVer = '2.102';
 gulp.task('default', defaultTask);
 
 gulp.task('build', function() {
-    return spawn('docker', ['build', '-t', 'jenkinsfarmmaster', './jenkins'], {stdio: 'inherit'})
+    return spawn('docker', ['build', '-t', 'jenkinsfarm-master', './jenkins'], {stdio: 'inherit'})
 });
 
 gulp.task('start', function() {
-    return spawn('docker', ['run', '-p', '8080:8080', '--name=jenkins-master', '-d', 'jenkinsfarmmaster'], {stdio: 'inherit'})
+    return spawn('docker', ['run', '-p', '8080:8080', '--name=jenkins-master', '-d', 'jenkinsfarm-master'], {stdio: 'inherit'})
 });
 
 gulp.task('stop', function() {
