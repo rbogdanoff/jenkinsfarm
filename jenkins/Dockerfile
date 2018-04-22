@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.102
+FROM jenkins/jenkins:2.117
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
 COPY security.groovy /usr/share/jenkins/ref/init.groovy.d/security.groovy

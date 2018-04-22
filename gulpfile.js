@@ -23,10 +23,6 @@ gulp.task('list', function() {
     return spawn('docker', ['ps', '-a'], {stdio: 'inherit'})
 });
 
-gulp.task('password', function() {
-    return spawn('docker', ['exec', 'jenkins-master', 'cat', '/var/jenkins_home/secrets/initialAdminPassword'], {stdio: 'inherit'})
-});
-
 function defaultTask(done) {
   // place code for your default task here
   done();
